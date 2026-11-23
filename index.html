@@ -78,9 +78,9 @@ h1 span{color:var(--rose)}
     <h2>เพลงนี้อยากให้เธอฟัง ♫</h2>
     <p>เลือกไฟล์เพลง MP3 จาก iPhone ของเธอ แล้วกดเล่นได้เลย</p>
     <input id="musicFile" type="file" accept="audio/*">
-    <audio id="player" controls preload="none"></audio>
-    <p class="note">หมายเหตุ: เพลงจะเล่นจากไฟล์ที่เลือกในเครื่องนี้เท่านั้น ไม่ได้อัปโหลดไปที่เว็บไซต์</p>
-  </section>
+<audio id="player" controls preload="metadata">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
   <section class="panel center">
     <div class="small">ONE LAST THING</div>
