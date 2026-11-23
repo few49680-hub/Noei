@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171522">
+<title>For เบบี๋เนย ♡</title>
+<style>
+:root{--night:#171522;--plum:#292236;--rose:#d9aeb8;--cream:#fff5ed;--gold:#e7d2a9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 50% 0%,#4a354e 0%,#242033 42%,#151420 100%);min-height:100vh;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(2px 2px at 15% 22%,#fff8 50%,transparent 60%),radial-gradient(1px 1px at 78% 18%,#fff9 50%,transparent 60%),radial-gradient(2px 2px at 88% 67%,#fff7 50%,transparent 60%),radial-gradient(1px 1px at 32% 78%,#fff8 50%,transparent 60%),radial-gradient(1px 1px at 61% 44%,#fff8 50%,transparent 60%);background-size:320px 320px;animation:twinkle 7s ease-in-out infinite alternate}
+body:after{filter:blur(1px);opacity:.5;transform:translateY(40px);animation-delay:-3s}
+.wrap{position:relative;z-index:1;width:min(100% - 30px,720px);margin:auto;padding:30px 0 55px}
+.hero{text-align:center;padding:50px 16px 34px}
+.kicker{font-size:10px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(42px,11vw,72px);line-height:1.12;margin:18px 0 12px;letter-spacing:-.04em}
+h1 span{color:var(--rose)}
+.subtitle{color:#d8cbd4;font-size:14px;line-height:1.9}
+.orbit{width:112px;height:112px;border:1px solid #e7d2a966;border-radius:50%;margin:28px auto 0;display:grid;place-items:center;position:relative}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #e7d2a944;border-radius:50%;inset:9px}
+.orbit:after{inset:-8px;border-style:dashed;animation:spin 24s linear infinite}
+.orbit b{font-size:35px;color:var(--rose);font-weight:400;animation:pulse 2.4s infinite}
+.panel{background:linear-gradient(145deg,#ffffff12,#ffffff08);border:1px solid #ffffff20;border-radius:26px;padding:26px 23px;margin:18px 0;box-shadow:0 18px 55px #0003;backdrop-filter:blur(10px)}
+.panel h2{font-family:Georgia,serif;font-size:25px;font-weight:400;text-align:center;margin:0 0 18px;color:#f4dce1}
+.panel p{color:#e1d6dd;font-size:14px;line-height:2;margin:0 0 13px}
+.center{text-align:center}
+.small{font-size:11px;color:#c6b6c4;letter-spacing:.1em}
+.divider{width:55px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto}
+#letter-toggle{position:absolute;opacity:0;pointer-events:none}
+.open-btn,.close-btn{display:inline-block;border:1px solid #e7d2a988;border-radius:999px;padding:13px 24px;color:#241d2c;background:linear-gradient(110deg,#f0d8d4,#dfc39f);font-size:13px;letter-spacing:.04em;cursor:pointer;box-shadow:0 8px 25px #0003}
+.close-btn{display:none;margin-top:18px}
+.letter{display:none;margin-top:25px;padding-top:22px;border-top:1px solid #ffffff25;text-align:left}
+#letter-toggle:checked~.letter{display:block;animation:rise .7s ease both}
+#letter-toggle:checked~.open-btn{display:none}
+#letter-toggle:checked~.close-btn{display:inline-block}
+.signature{text-align:center!important;font-family:Georgia,serif;font-size:23px!important;color:#f2d4dc!important;margin-top:20px!important}
+.music-box{text-align:center}
+.music-box input{display:block;max-width:100%;margin:14px auto;color:#e8dce2;font-size:12px}
+.music-box audio{width:100%;height:42px;margin-top:10px;filter:sepia(.2) saturate(.7)}
+.note{font-size:11px!important;color:#c7b9c5!important;line-height:1.7!important}
+.footer{text-align:center;color:#ad9bab;font-size:10px;letter-spacing:.22em;padding:22px 0 0}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:scale(1.16);text-shadow:0 0 24px #e6a9bd}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="kicker">A little universe made for you</div>
+    <h1>ถึง <span>เบบี๋เนย</span></h1>
+    <div class="subtitle">ในจักรวาลที่กว้างใหญ่<br>เราดีใจที่ได้พบเธอ 🤍</div>
+    <div class="orbit"><b>♡</b></div>
+  </header>
+
+  <section class="panel center">
+    <div class="small">JUST FOR YOU</div>
+    <h2>มีจดหมายถึงเธอหนึ่งฉบับ</h2>
+    <p>เราเก็บคำพูดเล็ก ๆ เหล่านี้ไว้<br>อยากให้เธอค่อย ๆ อ่านนะ</p>
+    <input type="checkbox" id="letter-toggle">
+    <label class="open-btn" for="letter-toggle">เปิดจดหมาย ♡</label>
+    <div class="letter">
+      <p>ถึงเบบี๋เนย,</p>
+      <p>ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิตนะ ตั้งแต่มีเธอ เรื่องธรรมดาหลาย ๆ เรื่องก็กลายเป็นความทรงจำที่มีความหมาย</p>
+      <p>เราอาจไม่ได้สมบูรณ์แบบ และอาจมีวันที่เข้าใจกันไม่ตรงกันบ้าง แต่เราอยากตั้งใจรับฟัง เรียนรู้ และเติบโตไปด้วยกันทีละวัน</p>
+      <p>ขอให้เธอรู้ไว้ว่าความรู้สึกดี ๆ ที่เรามีให้เธอนั้นจริงใจเสมอ ขอบคุณสำหรับรอยยิ้ม เสียงหัวเราะ และช่วงเวลาที่ได้แบ่งปันกัน</p>
+      <p class="signature">รักเบบี๋เนยนะ 🤍</p>
+    </div>
+    <label class="close-btn" for="letter-toggle">พับจดหมาย</label>
+  </section>
+
+  <section class="panel music-box">
+    <div class="small">OUR LITTLE SOUNDTRACK</div>
+    <h2>เพลงนี้อยากให้เธอฟัง ♫</h2>
+    <p>เลือกไฟล์เพลง MP3 จาก iPhone ของเธอ แล้วกดเล่นได้เลย</p>
+    <input id="musicFile" type="file" accept="audio/*">
+    <audio id="player" controls preload="none"></audio>
+    <p class="note">หมายเหตุ: เพลงจะเล่นจากไฟล์ที่เลือกในเครื่องนี้เท่านั้น ไม่ได้อัปโหลดไปที่เว็บไซต์</p>
+  </section>
+
+  <section class="panel center">
+    <div class="small">ONE LAST THING</div>
+    <h2>ขอให้วันนี้เป็นวันที่ดีของเธอ</h2>
+    <div class="divider"></div>
+    <p>ไม่ว่าวันนี้จะเหนื่อยแค่ไหน<br>ขอให้จำไว้ว่ายังมีคนที่อยากเห็นเธอยิ้มเสมอ</p>
+    <p class="signature">For you, เบบี๋เนย ♡</p>
+  </section>
+  <footer class="footer">MADE WITH LOVE · JUST FOR YOU</footer>
+</main>
+<script>
+const picker = document.getElementById('musicFile');
+const player = document.getElementById('player');
+let currentUrl = null;
+picker.addEventListener('change', () => {
+  const file = picker.files && picker.files[0];
+  if (!file) return;
+  if (currentUrl) URL.revokeObjectURL(currentUrl);
+  currentUrl = URL.createObjectURL(file);
+  player.src = currentUrl;
+  player.load();
+});
+</script>
+</body>
+</html>
