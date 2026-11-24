@@ -4,195 +4,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#171522">
-<title>For น้องเนย ♡</title>
+<meta name="theme-color" content="#050b18">
+<title>MAREAL XRO | Download Center</title>
+
 <style>
-:root {
-  --night:#171522;
-  --plum:#292236;
-  --rose:#d9aeb8;
-  --cream:#fff5ed;
-  --gold:#e7d2a9;
-}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{
-  margin:0;color:var(--cream);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:radial-gradient(ellipse at 50% 0%,#4a354e 0%,#242033 42%,#151420 100%);
-  min-height:100vh;overflow-x:hidden
+  margin:0;
+  min-height:100vh;
+  font-family:Arial,sans-serif;
+  color:#eaf7ff;
+  background:
+  radial-gradient(circle at 50% 0%,#123d70 0%,transparent 42%),
+  linear-gradient(150deg,#030712,#07172c 55%,#02050c);
 }
-body:before,body:after{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background-image:
-  radial-gradient(2px 2px at 15% 22%,#fff8 50%,transparent 60%),
-  radial-gradient(1px 1px at 78% 18%,#fff9 50%,transparent 60%),
-  radial-gradient(2px 2px at 88% 67%,#fff7 50%,transparent 60%),
-  radial-gradient(1px 1px at 32% 78%,#fff8 50%,transparent 60%),
-  radial-gradient(1px 1px at 61% 44%,#fff8 50%,transparent 60%);
-  background-size:320px 320px;
-  animation:twinkle 7s ease-in-out infinite alternate
+.container{
+  width:min(92%,480px);
+  margin:auto;
+  padding:55px 0 35px;
 }
-body:after{
-  filter:blur(1px);opacity:.5;transform:translateY(40px);
-  animation-delay:-3s
+.header{text-align:center;margin-bottom:38px}
+.logo{
+  font-size:38px;
+  font-weight:900;
+  letter-spacing:3px;
+  color:#65d9ff;
+  text-shadow:0 0 15px #00aaff,0 0 35px #0077ff;
 }
-.wrap{
-  position:relative;z-index:1;
-  width:min(100% - 30px,720px);
-  margin:auto;padding:30px 0 55px
+.subtitle{
+  color:#91b9d8;
+  letter-spacing:4px;
+  font-size:11px;
+  margin-top:10px;
 }
-.hero{text-align:center;padding:50px 16px 34px}
-.kicker{
-  font-size:10px;letter-spacing:.32em;
-  color:var(--gold);text-transform:uppercase
+.line{
+  width:65px;height:3px;
+  margin:22px auto;
+  background:#27c9ff;
+  box-shadow:0 0 15px #00aaff;
+  border-radius:10px;
 }
-h1{
-  font-family:Georgia,"Times New Roman",serif;
-  font-weight:400;font-size:clamp(42px,11vw,72px);
-  line-height:1.12;margin:18px 0 12px;letter-spacing:-.04em
+.card{
+  padding:25px 22px;
+  margin:18px 0;
+  border:1px solid #168bdc66;
+  border-radius:18px;
+  background:linear-gradient(145deg,#102947dd,#071323ee);
+  box-shadow:0 10px 35px #001b3b88;
 }
-h1 span{color:var(--rose)}
-.subtitle{color:#d8cbd4;font-size:14px;line-height:1.9}
-.orbit{
-  width:112px;height:112px;border:1px solid #e7d2a966;
-  border-radius:50%;margin:28px auto 0;
-  display:grid;place-items:center;position:relative
+.number{
+  color:#37cfff;
+  font-size:12px;
+  letter-spacing:3px;
 }
-.orbit:before,.orbit:after{
-  content:"";position:absolute;border:1px solid #e7d2a944;
-  border-radius:50%;inset:9px
+h2{margin:10px 0;color:#fff;font-size:23px}
+.description{
+  color:#9bbbd5;
+  font-size:13px;
+  margin-bottom:23px;
 }
-.orbit:after{
-  inset:-8px;border-style:dashed;
-  animation:spin 24s linear infinite
+.download{
+  display:block;
+  text-align:center;
+  padding:15px;
+  border-radius:10px;
+  color:#00101c;
+  font-weight:bold;
+  text-decoration:none;
+  background:linear-gradient(100deg,#35cfff,#1685ff);
+  box-shadow:0 0 18px #008cff66;
+  transition:.25s;
 }
-.orbit b{
-  font-size:35px;color:var(--rose);font-weight:400;
-  animation:pulse 2.4s infinite
+.download:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 28px #00aaffaa;
 }
-.panel{
-  background:linear-gradient(145deg,#ffffff12,#ffffff08);
-  border:1px solid #ffffff20;border-radius:26px;
-  padding:26px 23px;margin:18px 0;
-  box-shadow:0 18px 55px #0003;
-  backdrop-filter:blur(10px)
-}
-.panel h2{
-  font-family:Georgia,serif;font-size:25px;
-  font-weight:400;text-align:center;
-  margin:0 0 18px;color:#f4dce1
-}
-.panel p{color:#e1d6dd;font-size:14px;line-height:2;margin:0 0 13px}
-.center{text-align:center}
-.small{font-size:11px;color:#c6b6c4;letter-spacing:.1em}
-.divider{
-  width:55px;height:1px;
-  background:linear-gradient(90deg,transparent,var(--gold),transparent);
-  margin:22px auto
-}
-#letter-toggle{position:absolute;opacity:0;pointer-events:none}
-.open-btn,.close-btn{
-  display:inline-block;border:1px solid #e7d2a988;
-  border-radius:999px;padding:13px 24px;
-  color:#241d2c;background:linear-gradient(110deg,#f0d8d4,#dfc39f);
-  font-size:13px;letter-spacing:.04em;cursor:pointer;
-  box-shadow:0 8px 25px #0003
-}
-.close-btn{display:none;margin-top:18px}
-.letter{
-  display:none;margin-top:25px;padding-top:22px;
-  border-top:1px solid #ffffff25;text-align:left
-}
-#letter-toggle:checked~.letter{display:block;animation:rise .7s ease both}
-#letter-toggle:checked~.open-btn{display:none}
-#letter-toggle:checked~.close-btn{display:inline-block}
-.signature{
-  text-align:center!important;font-family:Georgia,serif;
-  font-size:23px!important;color:#f2d4dc!important;
-  margin-top:20px!important
-}
-.music-box{text-align:center}
-.music-box audio{
-  display:block;width:100%;height:46px;
-  margin:18px auto 0
+.telegram{
+  display:block;
+  margin-top:28px;
+  padding:15px;
+  border:1px solid #25baff;
+  border-radius:12px;
+  text-align:center;
+  color:#65d9ff;
+  text-decoration:none;
+  background:#071c31;
 }
 .footer{
-  text-align:center;color:#ad9bab;font-size:10px;
-  letter-spacing:.22em;padding:22px 0 0
-}
-@keyframes twinkle{from{opacity:.45}to{opacity:1}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes pulse{
-  50%{transform:scale(1.16);text-shadow:0 0 24px #e6a9bd}
-}
-@keyframes rise{
-  from{opacity:0;transform:translateY(12px)}
-  to{opacity:1;transform:translateY(0)}
-}
-@media(prefers-reduced-motion:reduce){
-  *,*:before,*:after{animation:none!important;scroll-behavior:auto}
+  text-align:center;
+  color:#52728f;
+  font-size:11px;
+  letter-spacing:2px;
+  margin-top:40px;
 }
 </style>
 </head>
-<body>
-<main class="wrap">
 
-  <header class="hero">
-    <div class="kicker">A little universe made for you</div>
-    <h1>ถึง <span>น้องเนย</span></h1>
-    <div class="subtitle">
-      ในจักรวาลที่กว้างใหญ่<br>
-      เราดีใจที่ได้พบเธอ 🤍
-    </div>
-    <div class="orbit"><b>♡</b></div>
+<body>
+<main class="container">
+
+  <header class="header">
+    <div class="logo">MAREAL XRO</div>
+    <div class="subtitle">OFFICIAL DOWNLOAD CENTER</div>
+    <div class="line"></div>
+    <p>WELCOME TO MAREAL XRO</p>
   </header>
 
-  <section class="panel center">
-    <div class="small">JUST FOR YOU</div>
-    <h2>มีจดหมายถึงเธอหนึ่งฉบับ</h2>
-    <p>
-      เราเก็บคำพูดเล็ก ๆ เหล่านี้ไว้<br>
-      อยากให้เธอค่อย ๆ อ่านนะ
+  <section class="card">
+    <div class="number">DOWNLOAD 01</div>
+    <h2>AIM DRAG</h2>
+    <p class="description">
+      AIM DRAG FILE · VERSION 3105
     </p>
-
-    <input type="checkbox" id="letter-toggle">
-    <label class="open-btn" for="letter-toggle">เปิดจดหมาย ♡</label>
-
-    <div class="letter">
-      <p>ถึงน้องเนย,</p>
-      <p>ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิตนะ ตั้งแต่มีเธอ เรื่องธรรมดาหลาย ๆ เรื่องก็กลายเป็นความทรงจำที่มีความหมาย</p>
-      <p>เราอาจไม่ได้สมบูรณ์แบบ และอาจมีวันที่เข้าใจกันไม่ตรงกันบ้าง แต่เราอยากตั้งใจรับฟัง เรียนรู้ และเติบโตไปด้วยกันทีละวัน</p>
-      <p>ขอให้เธอรู้ไว้ว่าความรู้สึกดี ๆ ที่เรามีให้เธอนั้นจริงใจเสมอ ขอบคุณสำหรับรอยยิ้ม เสียงหัวเราะ และช่วงเวลาที่ได้แบ่งปันกัน</p>
-      <p class="signature">รักน้องเนย 🤍</p>
-    </div>
-
-    <label class="close-btn" for="letter-toggle">พับจดหมาย</label>
+    <a class="download"
+       href="https://www.mediafire.com/file/j0mqxxs39jgykcw/Aim+Drag.3105/file"
+       target="_blank" rel="noopener noreferrer">
+       DOWNLOAD AIM DRAG ↗
+    </a>
   </section>
 
-  <section class="panel music-box">
-    <div class="small">OUR LITTLE SOUNDTRACK</div>
-    <h2>เพลงนี้อยากเปิดให้คุณฟัง ♫</h2>
-
-    <audio id="player" controls preload="metadata">
-      <source src="music.mp3" type="audio/mpeg">
-      เบราว์เซอร์ไม่รองรับเครื่องเล่นเสียง
-    </audio>
-  </section>
-
-  <section class="panel center">
-    <div class="small">ONE LAST THING</div>
-    <h2>ขอให้วันนี้เป็นวันที่ดีของเธอ</h2>
-    <div class="divider"></div>
-    <p>
-      ไม่ว่าวันนี้จะเหนื่อยแค่ไหน<br>
-      ขอให้จำไว้ว่ายังมีคนที่อยากเห็นเธอยิ้มเสมอ
+  <section class="card">
+    <div class="number">DOWNLOAD 02</div>
+    <h2>MOD SKIN</h2>
+    <p class="description">
+      MOD SKIN FILE · VERSION 3105
     </p>
-    <p class="signature">For you, for เนย ♡</p>
+    <a class="download"
+       href="https://www.mediafire.com/file/2no4hrxywp2ltep/Mod+Skin.3105/file"
+       target="_blank" rel="noopener noreferrer">
+       DOWNLOAD MOD SKIN ↗
+    </a>
   </section>
+
+  <a class="telegram"
+     href="https://t.me/Marealxro"
+     target="_blank" rel="noopener noreferrer">
+     TELEGRAM · @MAREALXRO ↗
+  </a>
 
   <footer class="footer">
-    MADE WITH LOVE · JUST FOR YOU
+    © MAREAL XRO · DOWNLOAD CENTER
   </footer>
 
 </main>
