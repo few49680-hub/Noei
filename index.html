@@ -1,34 +1,278 @@
 
-<section class="card">
-  <div class="number">DOWNLOAD 03</div>
-  <h2>AIMDRAG + ANTENA</h2>
-  <p class="description">
-    AIMDRAG + ANTENA FILE · VERSION 3105
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b18">
+<title>MAREAL XRO | Download Center</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#eaf7ff;
+  background:
+    radial-gradient(ellipse at 50% 0%,#123f72 0%,transparent 48%),
+    linear-gradient(145deg,#020611,#07172b 55%,#02050c);
+}
+.container{
+  width:min(92%,480px);
+  margin:auto;
+  padding:48px 0 35px;
+}
+.header{
+  text-align:center;
+  padding:25px 10px 35px;
+}
+.logo{
+  font-size:clamp(34px,9vw,45px);
+  font-weight:950;
+  letter-spacing:3px;
+  color:#8be6ff;
+  text-shadow:0 0 12px #00aaff,0 0 35px #0077ff;
+}
+.subtitle{
+  color:#8eb9d9;
+  font-size:10px;
+  letter-spacing:5px;
+  margin-top:12px;
+}
+.line{
+  width:75px;
+  height:3px;
+  margin:24px auto;
+  border-radius:10px;
+  background:linear-gradient(90deg,#1685ff,#65e4ff);
+  box-shadow:0 0 18px #00aaff;
+}
+.intro{
+  color:#b5d3e9;
+  font-size:13px;
+  line-height:1.8;
+}
+.section-title{
+  color:#70dfff;
+  font-size:11px;
+  letter-spacing:3px;
+  margin:28px 4px 14px;
+}
+.card{
+  position:relative;
+  overflow:hidden;
+  padding:24px 21px;
+  margin:16px 0;
+  border:1px solid #258edb66;
+  border-radius:20px;
+  background:linear-gradient(145deg,#102b49ee,#071323f5);
+  box-shadow:0 12px 35px #00152e99;
+  transition:.25s;
+}
+.card:before{
+  content:"";
+  position:absolute;
+  top:0;left:20px;right:20px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#59dfff,transparent);
+}
+.card:hover{
+  transform:translateY(-3px);
+  border-color:#50cfff;
+  box-shadow:0 15px 40px #007bff33;
+}
+.number{
+  color:#4ed5ff;
+  font-size:10px;
+  letter-spacing:3px;
+}
+h2{
+  margin:12px 0 8px;
+  color:#fff;
+  font-size:23px;
+  letter-spacing:.5px;
+}
+.description{
+  color:#9bbbd5;
+  font-size:12px;
+  margin:0 0 22px;
+}
+.download{
+  display:block;
+  text-align:center;
+  padding:15px 12px;
+  border-radius:12px;
+  color:#00101c;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-decoration:none;
+  background:linear-gradient(100deg,#62e4ff,#258aff);
+  box-shadow:0 0 20px #008cff55;
+  transition:.2s;
+}
+.download:active{transform:scale(.97)}
+.password{
+  text-align:center;
+  margin:25px 0;
+  padding:22px 15px;
+  border:1px solid #238edb88;
+  border-radius:18px;
+  background:linear-gradient(145deg,#0b2540,#061323);
+  box-shadow:0 0 25px #007bff22;
+}
+.password-label{
+  color:#68dcff;
+  font-size:10px;
+  letter-spacing:4px;
+}
+.password-value{
+  color:#fff;
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:1px;
+  margin:12px 0 7px;
+  text-shadow:0 0 15px #00aaff;
+}
+.password-note{
+  color:#91b6d2;
+  font-size:11px;
+}
+.music{
+  text-align:center;
+  padding:22px 18px;
+  margin-top:25px;
+  border:1px solid #258edb66;
+  border-radius:18px;
+  background:#081a2d;
+}
+.music-title{
+  color:#65d9ff;
+  font-size:11px;
+  letter-spacing:3px;
+}
+audio{width:100%;margin-top:15px}
+.music button{
+  margin-top:12px;
+  padding:11px 22px;
+  border:0;
+  border-radius:10px;
+  background:#35cfff;
+  color:#00101c;
+  font-weight:bold;
+}
+.telegram{
+  display:block;
+  margin-top:25px;
+  padding:16px;
+  border:1px solid #25baff;
+  border-radius:13px;
+  text-align:center;
+  color:#75ddff;
+  font-weight:bold;
+  letter-spacing:1px;
+  text-decoration:none;
+  background:linear-gradient(120deg,#0b2945,#071629);
+  box-shadow:0 0 20px #008cff22;
+}
+.footer{
+  text-align:center;
+  color:#587a98;
+  font-size:10px;
+  letter-spacing:2px;
+  margin-top:38px;
+  line-height:2;
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+
+<header class="header">
+  <div class="logo">MAREAL XRO</div>
+  <div class="subtitle">DOWNLOAD CENTER</div>
+  <div class="line"></div>
+  <p class="intro">
+    WELCOME TO MAREAL XRO<br>
+    YOUR DOWNLOAD DESTINATION
   </p>
+</header>
+
+<div class="section-title">AVAILABLE DOWNLOADS / 03</div>
+
+<section class="card">
+  <div class="number">DOWNLOAD 01</div>
+  <h2>AIM DRAG</h2>
+  <p class="description">AIM DRAG FILE · VERSION 3105</p>
   <a class="download"
-     href="https://www.mediafire.com/file/15y3nzibrczar37/Aimdrag-Antena.3105/file"
+     href="https://www.mediafire.com/file/j0mqxxs39jgykcw/Aim+Drag.3105/file"
      target="_blank" rel="noopener noreferrer">
-     DOWNLOAD AIMDRAG + ANTENA ↗
+    DOWNLOAD AIM DRAG ↗
   </a>
 </section>
 
-<div style="
-  text-align:center;
-  margin:22px 0;
-  padding:17px;
-  border:1px solid #168bdc66;
-  border-radius:14px;
-  background:#071c31;
-  color:#65d9ff;
-  box-shadow:0 0 18px #008cff33;
-">
-  <div style="font-size:12px;letter-spacing:2px">
-    FILE PASSWORD
-  </div>
-  <div style="font-size:22px;font-weight:bold;margin-top:8px">
-    @Marealxro
-  </div>
-  <div style="font-size:11px;color:#9bbbd5;margin-top:7px">
+<section class="card">
+  <div class="number">DOWNLOAD 02</div>
+  <h2>MOD SKIN</h2>
+  <p class="description">MOD SKIN FILE · VERSION 3105</p>
+  <a class="download"
+     href="https://www.mediafire.com/file/2no4hrxywp2ltep/Mod+Skin.3105/file"
+     target="_blank" rel="noopener noreferrer">
+    DOWNLOAD MOD SKIN ↗
+  </a>
+</section>
+
+<section class="card">
+  <div class="number">DOWNLOAD 03</div>
+  <h2>AIMDRAG + ANTENA</h2>
+  <p class="description">AIMDRAG + ANTENA FILE · VERSION 3105</p>
+  <a class="download"
+     href="https://www.mediafire.com/file/15y3nzibrczar37/Aimdrag-Antena.3105/file"
+     target="_blank" rel="noopener noreferrer">
+    DOWNLOAD AIMDRAG + ANTENA ↗
+  </a>
+</section>
+
+<section class="password">
+  <div class="password-label">FILE PASSWORD</div>
+  <div class="password-value">@Marealxro</div>
+  <div class="password-note">
     รหัสผ่านสำหรับทุกไฟล์ดาวน์โหลด
   </div>
-</div>
+</section>
+
+<section class="music">
+  <div class="music-title">MAREAL XRO MUSIC ♫</div>
+  <audio id="bgMusic" controls loop preload="metadata">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="document.getElementById('bgMusic').play()">
+    ▶ PLAY MUSIC
+  </button>
+</section>
+
+<a class="telegram"
+   href="https://t.me/Marealxro"
+   target="_blank" rel="noopener noreferrer">
+  TELEGRAM · @MAREALXRO ↗
+</a>
+
+<footer class="footer">
+  © MAREAL XRO<br>
+  THANK YOU FOR VISITING
+</footer>
+
+</main>
+
+<script>
+const music = document.getElementById("bgMusic");
+music.play().catch(() => {
+  // หากเบราว์เซอร์บล็อก autoplay ให้กด PLAY MUSIC
+});
+</script>
+
+</body>
+</html>
